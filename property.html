@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Serbelloni | Elite European Estates</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'off-white': '#F8F7F4',
+                        'warm-beige': '#E8E3DA',
+                        'charcoal': '#1E1E1E',
+                        'soft-gold': '#C6A75E',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-off-white text-charcoal font-sans selection:bg-soft-gold selection:text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-700 px-8 py-6 flex justify-between items-center nav-scrolled">
+        <a href="index.html" class="text-2xl font-serif font-bold tracking-tighter">ELITE.</a>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-12 text-[10px] tracking-[0.2em] uppercase font-bold">
+            <a href="index.html#about" class="nav-link relative group">About <span class="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span></a>
+            <a href="index.html#services" class="nav-link relative group">Services <span class="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span></a>
+            <a href="index.html#properties" class="nav-link relative group">Properties <span class="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span></a>
+            <a href="index.html#contact" class="nav-link relative group">Contact <span class="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span></a>
+        </div>
+
+        <button id="menu-toggle" class="md:hidden flex flex-col space-y-1.5 focus:outline-none z-50">
+            <span class="w-6 h-[1px] bg-charcoal"></span>
+            <span class="w-6 h-[1px] bg-charcoal"></span>
+        </button>
+    </nav>
+
+    <!-- Main Property Content -->
+    <main class="pt-32 pb-20">
+        <!-- Hero Image -->
+        <div class="px-8 md:px-20 mb-12 reveal-up active">
+            <div class="relative h-[70vh] w-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&q=80&w=2000" alt="Villa Serbelloni" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="px-8 md:px-20 flex space-x-4 mb-20 overflow-x-auto pb-4 no-scrollbar reveal-up active">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=400" class="w-40 h-28 object-cover cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35a36?auto=format&fit=crop&q=80&w=400" class="w-40 h-28 object-cover cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=400" class="w-40 h-28 object-cover cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=400" class="w-40 h-28 object-cover cursor-pointer hover:opacity-80 transition-opacity flex-shrink-0">
+        </div>
+
+        <!-- Property Details Header -->
+        <div class="px-8 md:px-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-8 reveal-up active">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-charcoal/10 pb-12">
+                    <div>
+                        <p class="text-soft-gold uppercase tracking-[0.3em] text-[10px] font-bold mb-4">Lake Como, Italy</p>
+                        <h1 class="text-5xl md:text-7xl font-serif mb-4">Villa Serbelloni</h1>
+                    </div>
+                    <div class="mt-8 md:mt-0 text-right">
+                        <p class="text-gray-400 text-[10px] uppercase tracking-widest mb-2">Asking Price</p>
+                        <p class="text-4xl font-serif text-soft-gold">€12,500,000</p>
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 py-8 border-b border-charcoal/10">
+                    <div class="flex flex-col">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 mb-2">Bedrooms</span>
+                        <span class="text-xl font-serif">06</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 mb-2">Bathrooms</span>
+                        <span class="text-xl font-serif">08</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 mb-2">Area</span>
+                        <span class="text-xl font-serif">1,200 m²</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 mb-2">Parking</span>
+                        <span class="text-xl font-serif">04 Slots</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="prose prose-lg max-w-none text-gray-600 font-light leading-relaxed space-y-8">
+                    <p>
+                        Nestled on the prestigious shores of Lake Como, Villa Serbelloni is a rare architectural gem that seamlessly blends Renaissance grandeur with contemporary European luxury. Originally constructed in the late 19th century, this estate has undergone a meticulous three-year restoration by Milan's finest artisans.
+                    </p>
+                    <p>
+                        The property features expansive floor-to-ceiling windows that offer panoramic views of the alpine landscape and the shimmering lake waters. Every room is a masterpiece of design, featuring hand-carved marble, sustainable oak flooring, and bespoke lighting fixtures curated from Paris.
+                    </p>
+                    <p>
+                        Beyond the main residence, the estate boasts a private infinity pool that appears to merge with the lake, a professional-grade wellness spa, and lush botanical gardens designed by award-winning landscape architects. This is not just a home; it is a sanctuary for those who appreciate the finer nuances of living.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar / Inquiry Form -->
+            <div class="lg:col-span-4 reveal-up active">
+                <div class="bg-warm-beige p-12 sticky top-32">
+                    <h3 class="text-2xl font-serif mb-8">Schedule a Viewing</h3>
+                    <form class="space-y-8">
+                        <div>
+                            <input type="text" placeholder="NAME" class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-soft-gold transition-colors placeholder:text-[10px] placeholder:tracking-widest">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="EMAIL" class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-soft-gold transition-colors placeholder:text-[10px] placeholder:tracking-widest">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="PHONE" class="w-full bg-transparent border-b border-charcoal/20 py-3 focus:outline-none focus:border-soft-gold transition-colors placeholder:text-[10px] placeholder:tracking-widest">
+                        </div>
+                        <button class="w-full py-4 bg-charcoal text-white uppercase tracking-widest text-[10px] font-bold hover:bg-soft-gold transition-colors duration-500">Request Information</button>
+                    </form>
+                    <div class="mt-12 pt-8 border-t border-charcoal/10 text-center">
+                        <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-2">Direct Contact</p>
+                        <p class="font-serif text-lg">+39 02 123 4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Similar Properties -->
+    <section class="py-32 bg-off-white px-8 md:px-20 border-t border-charcoal/5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif mb-16 text-center">Similar Properties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Property Card -->
+                <div class="group reveal-up active">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h4 class="text-xl font-serif mb-2">The Haussmann Sky</h4>
+                    <p class="text-soft-gold font-serif">€8,900,000</p>
+                </div>
+                <!-- Property Card -->
+                <div class="group reveal-up active">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h4 class="text-xl font-serif mb-2">Azure Coast Estate</h4>
+                    <p class="text-soft-gold font-serif">€15,200,000</p>
+                </div>
+                <!-- Property Card -->
+                <div class="group reveal-up active">
+                    <div class="relative overflow-hidden mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35a36?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                    <h4 class="text-xl font-serif mb-2">Zurich Lakeside</h4>
+                    <p class="text-soft-gold font-serif">€11,000,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white/70 py-20 px-8 md:px-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="md:col-span-2">
+                <h2 class="text-3xl font-serif text-white mb-8 tracking-tighter">ELITE.</h2>
+                <p class="max-w-sm leading-relaxed mb-8 font-light text-sm">
+                    Redefining luxury real estate across Europe's most prestigious locations. Our commitment to excellence and discretion is unparalleled.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white uppercase tracking-[0.2em] text-[10px] font-bold mb-8">Offices</h4>
+                <ul class="space-y-4 text-sm font-light">
+                    <li>Via Montenapoleone, Milan</li>
+                    <li>Avenue Montaigne, Paris</li>
+                    <li>Bahnhofstrasse, Zurich</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white uppercase tracking-[0.2em] text-[10px] font-bold mb-8">Quick Links</h4>
+                <ul class="space-y-4 text-sm font-light">
+                    <li><a href="index.html" class="hover:text-soft-gold transition-colors duration-300">Home</a></li>
+                    <li><a href="index.html#properties" class="hover:text-soft-gold transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="index.html#contact" class="hover:text-soft-gold transition-colors duration-300">Inquire</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

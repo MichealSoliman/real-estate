@@ -1,0 +1,79 @@
+/* Custom Scrollbar for modern browsers */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F8F7F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E8E3DA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C6A75E;
+}
+
+/* Transitions */
+.transition-all {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom Utilities */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Reveal Classes */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.reveal-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Hero Slide */
+.hero-slide {
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.hero-slide:not(.active) {
+    opacity: 0;
+    z-index: 0;
+}
