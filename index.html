@@ -109,6 +109,10 @@
                 tracking-[0.25em] uppercase font-bold
                 mx-auto">
 
+        <a href="#" class="relative group">
+            home
+            <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
         <a href="#about" class="relative group">
             About
             <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
@@ -153,6 +157,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-8 text-2xl font-serif">
+        <a href="#" class="mobile-link">home</a>
         <a href="#about" class="mobile-link">About</a>
         <a href="#services" class="mobile-link">Services</a>
         <a href="#properties" class="mobile-link">Properties</a>
@@ -444,7 +449,7 @@
         </div>
     </section>
 
-<section class="py-32 px-8 md:px-20 bg-[#f5f5f5]">
+<section class="py-32 px-8 md:px-20 bg-[#f5f5f5]" id="properties">
 
     <div class="max-w-7xl mx-auto">
 
@@ -1129,7 +1134,7 @@ document.addEventListener("keydown", function(e) {
 </script>
 
 <!-- Ultra Luxury Contact Section -->
-<section class="relative py-32 px-8 md:px-20 overflow-hidden">
+<section class="relative py-32 px-8 md:px-20 overflow-hidden" id="contact">
 
     <!-- Background -->
     <div class="absolute inset-0 bg-fixed bg-center bg-cover"
