@@ -87,76 +87,85 @@
 </head>
 <body class="bg-off-white text-charcoal font-serif selection:bg-soft-gold selection:text-white overflow-x-hidden">
 
-    <!-- Page Loader -->
-    <div id="loader" class="fixed inset-0 z-[100] bg-off-white flex items-center justify-center transition-opacity duration-1000">
-        <div class="text-3xl font-serif italic tracking-widest animate-pulse">Elite</div>
+   <!-- Page Loader -->
+    <div id="loader"
+        class="fixed inset-0 z-[100] bg-off-white flex items-center justify-center transition-opacity duration-1000">
+        <div class="text-3xl font-serif italic tracking-widest animate-pulse">GCS.r.l</div>
     </div>
 
     <!-- Navbar -->
-    <nav id="navbar"
-     class="fixed top-0 left-0 w-full z-50
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50
             transition-all duration-700
             px-[100px] py-8 flex items-center">
 
-    <!-- Logo -->
-    <a href="index.html"
-       class="text-3xl font-serif font-bold tracking-tight">
-        ELITE.
-    </a>
+        <!-- Logo -->
+        <a href="index.html" class="text-3xl font-serif font-bold tracking-tight">
+            GCS.r.l.
+        </a>
 
-    <!-- Desktop Menu (Centered) -->
-    <div class="hidden md:flex space-x-14 text-[15px]
+        <!-- Desktop Menu (Centered) -->
+        <div class="hidden md:flex space-x-14 text-[15px]
                 tracking-[0.25em] uppercase font-bold
                 mx-auto">
 
-        <a href="#about" class="relative group">
-            About
-            <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-        </a>
+            <a href="#" class="relative group">
+                principale
+                <span
+                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+            </a>
+            <a href="#about" class="relative group">
+                Chi siamo
+                <span
+                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+            </a>
 
-        <a href="#services" class="relative group">
-            Services
-            <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-        </a>
+            <a href="#services" class="relative group">
+                nostri servizi
+                <span
+                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+            </a>
 
-        <a href="#properties" class="relative group">
-            Properties
-            <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-        </a>
+            <a href="#properties" class="relative group">
+                nostri prodotti
+                <span
+                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+            </a>
 
-        <a href="#contact" class="relative group">
-            Contact
-            <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-        </a>
-    </div>
+            <a href="#contact" class="relative group">
+                Chiamata
+                <span
+                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+            </a>
+        </div>
 
-    <!-- Right Button (Desktop Only) -->
-    <div class="hidden md:block">
-        <a href="#contact"
-           class="border border-charcoal/20 px-8 py-3
+        <!-- Right Button (Desktop Only) -->
+        <div class="hidden md:block">
+            <a href="#contact" class="border border-charcoal/20 px-8 py-3
                   text-[12px] tracking-[0.3em] uppercase font-bold
                   hover:bg-charcoal hover:text-white
                   transition-all duration-500">
-            Inquire
-        </a>
-    </div>
+                Inquire
+            </a>
+        </div>
 
-    <!-- Mobile Toggle -->
-   <!-- Mobile Menu Toggle -->
+        <!-- Mobile Toggle -->
+        <!-- Mobile Menu Toggle -->
         <button id="menu-toggle" class="md:hidden ml-auto flex flex-col space-y-1.5 focus:outline-none z-50">
             <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar1"></span>
             <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar2"></span>
         </button>
 
-</nav>
+    </nav>
 
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-8 text-2xl font-serif">
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#services" class="mobile-link">Services</a>
-        <a href="#properties" class="mobile-link">Properties</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-8 text-2xl font-serif">
+        <a href="#" class="mobile-link">principale</a>
+        <a href="#about" class="mobile-link">Chi siamo</a>
+        <a href="#services" class="mobile-link">nostri servizi</a>
+        <a href="#properties" class="mobile-link">nostri prodotti</a>
+        <a href="#contact" class="mobile-link">Chiamata</a>
     </div>
 
   
@@ -288,163 +297,149 @@ thumbnails.forEach(thumb => {
       Related properties
     </h2>
 
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+   <!-- Grid -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <!-- Property Card -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-                  hover:shadow-xl transition duration-500 group">
+  <!-- Property Card 1 -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
+              hover:shadow-xl transition duration-500 group">
 
-        <!-- Image -->
-        <div class="relative overflow-hidden ">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
-               class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+    <!-- Image -->
+    <div class="relative overflow-hidden ">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
+           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
 
-          <div class="absolute top-4 left-4 flex gap-2">
-            <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-              Apartments
-            </span>
-            <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-              Rent
-            </span>
-          </div>
-        </div>
+      <div class="absolute top-4 left-4 flex gap-2">
+        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
+          Appartamenti
+        </span>
+        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
+          Affitto
+        </span>
+      </div>
+    </div>
 
-        <!-- Content -->
-        <div class="p-6">
+    <!-- Content -->
+    <div class="p-6">
 
-          <p class="text-gray-500 text-sm mb-2">
-            <i class="fa-solid fa-location-dot mr-2"></i>Manhattan
-          </p>
+      <p class="text-gray-500 text-sm mb-2">
+        <i class="fa-solid fa-location-dot mr-2"></i>Milano
+      </p>
 
-          <h3 class="text-lg font-semibold mb-4">
-            Family Mansion
-          </h3>
+      <h3 class="text-lg font-semibold mb-4">
+        Villa Familiare
+      </h3>
 
-          <!-- Specs -->
-          <div class="flex justify-between text-gray-500 text-sm mb-4">
-            <span><i class="fa-solid fa-bed mr-1"></i>Beds: 2</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>Baths: 2</span>
-            <span><i class="fa-solid fa-ruler-combined mr-1"></i>Sqft: 150</span>
-          </div>
-
-          <!-- Bottom -->
-          <div class="flex justify-between items-center border-t pt-4">
-
-            <div class="flex items-center gap-3">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                   class="w-8 h-8 rounded-full">
-              <span class="text-sm">Rachel Gray</span>
-            </div>
-
-            <span class="font-semibold text-lg">$2,200</span>
-
-          </div>
-
-        </div>
+      <!-- Specs -->
+      <div class="flex justify-between text-gray-500 text-sm mb-4">
+        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
+        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
       </div>
 
+      <!-- Bottom -->
+      <div class="flex justify-between items-center border-t pt-4">
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-                  hover:shadow-xl transition duration-500 group">
+        
 
-        <div class="relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200"
-               class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+        <span class="font-semibold text-lg">€2.200</span>
 
-          <div class="absolute top-4 left-4 flex gap-2">
-            <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-              Apartments
-            </span>
-            <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-              Rent
-            </span>
-          </div>
-        </div>
-
-        <div class="p-6">
-
-          <p class="text-gray-500 text-sm mb-2">
-            <i class="fa-solid fa-location-dot mr-2"></i>Staten Island
-          </p>
-
-          <h3 class="text-lg font-semibold mb-4">
-            East Sunlight Apartment
-          </h3>
-
-          <div class="flex justify-between text-gray-500 text-sm mb-4">
-            <span><i class="fa-solid fa-bed mr-1"></i>Beds: 4</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>Baths: 2</span>
-            <span><i class="fa-solid fa-ruler-combined mr-1"></i>Sqft: 160</span>
-          </div>
-
-          <div class="flex justify-between items-center border-t pt-4">
-
-            <div class="flex items-center gap-3">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg"
-                   class="w-8 h-8 rounded-full">
-              <span class="text-sm">Steve Parker</span>
-            </div>
-
-            <span class="font-semibold text-lg">$1,200</span>
-
-          </div>
-
-        </div>
-      </div>
-
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-                  hover:shadow-xl transition duration-500 group">
-
-        <div class="relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=1200"
-               class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
-
-          <div class="absolute top-4 left-4 flex gap-2">
-            <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-              Apartments
-            </span>
-            <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-              Rent
-            </span>
-          </div>
-        </div>
-
-        <div class="p-6">
-
-          <p class="text-gray-500 text-sm mb-2">
-            <i class="fa-solid fa-location-dot mr-2"></i>Manhattan
-          </p>
-
-          <h3 class="text-lg font-semibold mb-4">
-            Modern Family Home
-          </h3>
-
-          <div class="flex justify-between text-gray-500 text-sm mb-4">
-            <span><i class="fa-solid fa-bed mr-1"></i>Beds: 2</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>Baths: 2</span>
-            <span><i class="fa-solid fa-ruler-combined mr-1"></i>Sqft: 150</span>
-          </div>
-
-          <div class="flex justify-between items-center border-t pt-4">
-
-            <div class="flex items-center gap-3">
-              <img src="https://randomuser.me/api/portraits/women/44.jpg"
-                   class="w-8 h-8 rounded-full">
-              <span class="text-sm">Rachel Gray</span>
-            </div>
-
-            <span class="font-semibold text-lg">$2,200</span>
-
-          </div>
-
-        </div>
       </div>
 
     </div>
+  </div>
+
+  <!-- Property Card 2 -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
+              hover:shadow-xl transition duration-500 group">
+
+    <div class="relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200"
+           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+
+      <div class="absolute top-4 left-4 flex gap-2">
+        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
+          Appartamenti
+        </span>
+        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
+          Affitto
+        </span>
+      </div>
+    </div>
+
+    <div class="p-6">
+
+      <p class="text-gray-500 text-sm mb-2">
+        <i class="fa-solid fa-location-dot mr-2"></i>Torino
+      </p>
+
+      <h3 class="text-lg font-semibold mb-4">
+        Appartamento East Sunlight
+      </h3>
+
+      <div class="flex justify-between text-gray-500 text-sm mb-4">
+        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 4</span>
+        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 160</span>
+      </div>
+
+      <div class="flex justify-between items-center border-t pt-4">
+
+        
+
+        <span class="font-semibold text-lg">€1.200</span>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Property Card 3 -->
+  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
+              hover:shadow-xl transition duration-500 group">
+
+    <div class="relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=1200"
+           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+
+      <div class="absolute top-4 left-4 flex gap-2">
+        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
+          Appartamenti
+        </span>
+        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
+          Affitto
+        </span>
+      </div>
+    </div>
+
+    <div class="p-6">
+
+      <p class="text-gray-500 text-sm mb-2">
+        <i class="fa-solid fa-location-dot mr-2"></i>Milano
+      </p>
+
+      <h3 class="text-lg font-semibold mb-4">
+        Casa Moderna Familiare
+      </h3>
+
+      <div class="flex justify-between text-gray-500 text-sm mb-4">
+        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
+        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
+      </div>
+
+      <div class="flex justify-between items-center border-t pt-4">
+
+       
+
+        <span class="font-semibold text-lg">€2.200</span>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
 
   </div>
 
@@ -455,7 +450,7 @@ thumbnails.forEach(thumb => {
 <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999]">
 
     <!-- Call Button -->
-    <a href="tel:+201234567890"
+    <a href="tel:3899266641"
        class="group w-14 h-14 flex items-center justify-center
               rounded-full bg-black text-white
               shadow-[0_10px_30px_rgba(0,0,0,0.4)]
@@ -467,13 +462,13 @@ thumbnails.forEach(thumb => {
         <!-- Tooltip -->
         <span class="absolute right-16 bg-black text-white text-xs px-3 py-2 rounded-md
                      opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
-            Call Us
+            Chiamaci
         </span>
 
     </a>
 
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/201234567890"
+    <a href="https://wa.me/3899266641"
        target="_blank"
        class="group w-14 h-14 flex items-center justify-center
               rounded-full bg-green-500 text-white
@@ -495,129 +490,128 @@ thumbnails.forEach(thumb => {
 
 
 
-<!-- Ultra Luxury Footer -->
-<footer class="relative bg-[#111111] text-white pt-32 pb-16 overflow-hidden">
+ <!-- Ultra Luxury Footer -->
+    <footer class="relative bg-[#111111] text-white pt-32 pb-16 overflow-hidden">
 
-    <!-- Top Subtle Gradient Glow -->
-    <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/60 to-transparent"></div>
+        <!-- Top Subtle Gradient Glow -->
+        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/60 to-transparent"></div>
 
-    <div class="max-w-7xl mx-auto px-8 md:px-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-8 md:px-20 relative z-10">
 
-        <!-- Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
 
-            <!-- Column 1 - Logo & About -->
-            <div class="reveal-up">
-                <h3 class="text-4xl font-serif mb-6 tracking-tight">
-                    ELITE.
-                </h3>
-                <p class="text-gray-400 font-light leading-relaxed mb-8">
-                    Crafting refined living experiences through exceptional
-                    real estate and bespoke finishing services across Europe.
-                </p>
+                <!-- Column 1 - Logo & About -->
+                <div class="reveal-up">
+                    <h3 class="text-4xl font-serif mb-6 tracking-tight">
+                        GCS.r.l.
+                    </h3>
+                    <p class="text-gray-400 font-light leading-relaxed mb-8">
+                     Realizziamo esperienze di vita raffinate attraverso immobili eccezionali e servizi di finitura su misura in tutta Europa.                    </p>
 
-                <!-- Social Icons -->
-                <div class="flex space-x-5">
+                    <!-- Social Icons -->
+                    <div class="flex space-x-5">
 
-                    <a href="#" class="group w-11 h-11 flex items-center justify-center 
+                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
                                       border border-white/20 rounded-full
                                       hover:border-soft-gold hover:bg-soft-gold/10
                                       transition-all duration-500">
 
-                        <i class="fa-brands fa-instagram text-lg
+                            <i class="fa-brands fa-instagram text-lg
                                   transition duration-500 group-hover:text-soft-gold"></i>
-                    </a>
+                        </a>
 
-                    <a href="#" class="group w-11 h-11 flex items-center justify-center 
+                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
                                       border border-white/20 rounded-full
                                       hover:border-soft-gold hover:bg-soft-gold/10
                                       transition-all duration-500">
 
-                        <i class="fa-brands fa-facebook-f text-lg
+                            <i class="fa-brands fa-facebook-f text-lg
                                   transition duration-500 group-hover:text-soft-gold"></i>
-                    </a>
+                        </a>
 
-                    <a href="#" class="group w-11 h-11 flex items-center justify-center 
+                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
                                       border border-white/20 rounded-full
                                       hover:border-soft-gold hover:bg-soft-gold/10
                                       transition-all duration-500">
 
-                        <i class="fa-brands fa-linkedin-in text-lg
+                            <i class="fa-brands fa-linkedin-in text-lg
                                   transition duration-500 group-hover:text-soft-gold"></i>
-                    </a>
+                        </a>
 
-                    <a href="#" class="group w-11 h-11 flex items-center justify-center 
+                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
                                       border border-white/20 rounded-full
                                       hover:border-soft-gold hover:bg-soft-gold/10
                                       transition-all duration-500">
 
-                        <i class="fa-brands fa-whatsapp text-lg
+                            <i class="fa-brands fa-whatsapp text-lg
                                   transition duration-500 group-hover:text-soft-gold"></i>
-                    </a>
+                        </a>
 
+                    </div>
                 </div>
+
+
+                <!-- Column 2 - Quick Links -->
+                <div class="reveal-up">
+                    <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
+                        Collegamenti rapidi
+                    </h4>
+                    <ul class="space-y-4 text-gray-400 font-light">
+                        <li><a href="#home" class="hover:text-white transition duration-500">principale</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-500">Chi siamo</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-500">nostri servizi</a></li>
+                        <li><a href="#properties" class="hover:text-white transition duration-500">nostri prodotti</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-500">Chiamata</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Column 3 - Services -->
+                <div class="reveal-up">
+                   <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
+                        I Nostri Servizi
+                    </h4>
+                    <ul class="space-y-4 text-gray-400 font-light">
+                        <li>Ville di Lusso</li>
+                        <li>Appartamenti Moderni</li>
+                        <li>Ristrutturazione Completa</li>
+                        <li>Design d'Interni</li>
+                    </ul>
+                </div>
+
+
+                <!-- Column 4 - Contact -->
+                <div class="reveal-up">
+                    <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
+                        Contact
+                    </h4>
+                    <ul class="space-y-4 text-gray-400 font-light">
+                        <li><i class="fa-solid fa-location-dot mr-2 text-soft-gold"></i> Voghera, Italy</li>
+                        <li><i class="fa-solid fa-phone mr-2 text-soft-gold"></i> 3899266641</li>
+                        <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i>info@GCS.r.l.com</li>
+                    </ul>
+                </div>
+
             </div>
 
+            <!-- Divider -->
+            <div class="w-full h-[1px] bg-white/10 mb-10"></div>
 
-            <!-- Column 2 - Quick Links -->
-            <div class="reveal-up">
-                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                    Quick Links
-                </h4>
-                <ul class="space-y-4 text-gray-400 font-light">
-                    <li><a href="#about" class="hover:text-white transition duration-500">About Us</a></li>
-                    <li><a href="#services" class="hover:text-white transition duration-500">Services</a></li>
-                    <li><a href="#properties" class="hover:text-white transition duration-500">Properties</a></li>
-                    <li><a href="#portfolio" class="hover:text-white transition duration-500">Portfolio</a></li>
-                </ul>
-            </div>
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
 
-
-            <!-- Column 3 - Services -->
-            <div class="reveal-up">
-                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                    Our Services
-                </h4>
-                <ul class="space-y-4 text-gray-400 font-light">
-                    <li>Luxury Villas</li>
-                    <li>Modern Apartments</li>
-                    <li>Full Renovation</li>
-                    <li>Interior Design</li>
-                </ul>
-            </div>
-
-
-            <!-- Column 4 - Contact -->
-            <div class="reveal-up">
-                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                    Contact
-                </h4>
-                <ul class="space-y-4 text-gray-400 font-light">
-                    <li><i class="fa-solid fa-location-dot mr-2 text-soft-gold"></i> Milan, Italy</li>
-                    <li><i class="fa-solid fa-phone mr-2 text-soft-gold"></i> +39 000 000 000</li>
-                    <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i> info@elite.com</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Divider -->
-        <div class="w-full h-[1px] bg-white/10 mb-10"></div>
-
-        <!-- Bottom -->
-        <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
-
-            <p>© 2026 ELITE. All rights reserved.</p>
+                <p>© 2026 GCS.r.l. Tutti i diritti riservati.</p>
 
             <div class="flex space-x-6 mt-6 md:mt-0">
-                <a href="#" class="hover:text-white transition duration-500">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition duration-500">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-500">Informativa sulla Privacy</a>
+                <a href="#" class="hover:text-white transition duration-500">Termini di Servizio</a>
+            </div>
+
             </div>
 
         </div>
-
-    </div>
-</footer>
+    </footer>
 <script>
 const reveals = document.querySelectorAll('.reveal-up');
 
