@@ -190,7 +190,7 @@ const properties = {
   price: "$120,000",
 
    intro: {
-    title: "villa ",
+    title: " appartamento",
     description: "Splendido appartamento situato nella rinomata e tranquilla zona di Voghera, a pochi passi dalla stazione ferroviaria e vicino a tutti i principali servizi della città. L'immobile, posto al terzo piano, offre ampi spazi interni, con due camere da letto confortevoli e luminose, un soggiorno spazioso ideale per momenti di relax o per accogliere ospiti, un bagno funzionale e una cucina completamente attrezzata. Costruito nel 1970, l'appartamento combina uno stile classico con aggiornamenti moderni per garantire comfort e praticità quotidiana. La presenza di una cantina offre spazio aggiuntivo per riporre oggetti e mantenere l'abitazione ordinata.  La posizione strategica dell'immobile permette un facile accesso ai trasporti pubblici, rendendo semplici gli spostamenti verso altre zone di Voghera e del Ticino. L'ambiente circostante è tranquillo, perfetto per chi desidera vivere in una zona residenziale sicura e serena.  Senza spese condominiali elevate, l'appartamento rappresenta un'ottima opportunità sia per giovani coppie che per famiglie. Prezzo richiesto: 89.000€"
   },
 
