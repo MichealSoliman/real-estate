@@ -112,80 +112,78 @@
         <div class="text-3xl font-serif italic tracking-widest animate-pulse">Generali Srl</div>
     </div> -->
 
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50
-            transition-all duration-700
-            px-[100px] py-8 flex items-center">
+   <!-- Navbar -->
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50
+        transition-all duration-700
+        px-[100px] py-6 flex items-center">
 
-        <!-- Logo -->
-        <a href="index.html" class="text-3xl font-serif font-bold tracking-tight">
-            Generali Srl.
+    <!-- Logo -->
+    <a href="index.html" class="text-2xl font-serif font-bold tracking-tight">
+        Generali Srl.
+    </a>
+
+    <!-- Desktop Menu (Centered) -->
+    <div class="hidden md:flex space-x-10 text-[13px]
+            tracking-[0.1em] uppercase font-bold
+            mx-auto">
+
+        <a href="#" class="relative group">
+            principale
+            <span
+                class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
+        <a href="#about" class="relative group">
+            Chi siamo
+            <span
+                class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
         </a>
 
-        <!-- Desktop Menu (Centered) -->
-        <div class="hidden md:flex space-x-14 text-[15px]
-                tracking-[0.25em] uppercase font-bold
-                mx-auto">
+        <a href="#services" class="relative group">
+            nostri servizi
+            <span
+                class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
 
-            <a href="#" class="relative group">
-                principale
-                <span
-                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-            </a>
-            <a href="#about" class="relative group">
-                Chi siamo
-                <span
-                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-            </a>
+        <a href="#properties" class="relative group">
+            nostri prodotti
+            <span
+                class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
 
-            <a href="#services" class="relative group">
-                nostri servizi
-                <span
-                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-            </a>
-
-            <a href="#properties" class="relative group">
-                nostri prodotti
-                <span
-                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-            </a>
-
-            <a href="#contact" class="relative group">
-                Chiamata
-                <span
-                    class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
-            </a>
-        </div>
-
-        <!-- Right Button (Desktop Only) -->
-        <div class="hidden md:block">
-            <a href="#contact" class="border border-charcoal/20 px-8 py-3
-                  text-[12px] tracking-[0.3em] uppercase font-bold
-                  hover:bg-charcoal hover:text-white
-                  transition-all duration-500">
-                Inquire
-            </a>
-        </div>
-
-        <!-- Mobile Toggle -->
-        <!-- Mobile Menu Toggle -->
-        <button id="menu-toggle" class="md:hidden ml-auto flex flex-col space-y-1.5 focus:outline-none z-50">
-            <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar1"></span>
-            <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar2"></span>
-        </button>
-
-    </nav>
-
-
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu"
-        class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-8 text-2xl font-serif">
-        <a href="#" class="mobile-link">principale</a>
-        <a href="#about" class="mobile-link">Chi siamo</a>
-        <a href="#services" class="mobile-link">nostri servizi</a>
-        <a href="#properties" class="mobile-link">nostri prodotti</a>
-        <a href="#contact" class="mobile-link">Chiamata</a>
+        <a href="#contact" class="relative group">
+            Chiamata
+            <span
+                class="absolute -bottom-2 left-0 w-0 h-[1px] bg-soft-gold transition-all duration-500 group-hover:w-full"></span>
+        </a>
     </div>
+
+    <!-- Right Button (Desktop Only) -->
+    <div class="hidden md:block">
+        <a href="#contact" class="border border-charcoal/20 px-6 py-2
+              text-[11px] tracking-[0.2em] uppercase font-bold
+              hover:bg-charcoal hover:text-white
+              transition-all duration-500">
+            Inquire
+        </a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button id="menu-toggle" class="md:hidden ml-auto flex flex-col space-y-1.5 focus:outline-none z-50">
+        <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar1"></span>
+        <span class="w-6 h-[1px] bg-charcoal transition-transform duration-500" id="bar2"></span>
+    </button>
+
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+    class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-6 text-xl font-serif">
+    <a href="#" class="mobile-link">principale</a>
+    <a href="#about" class="mobile-link">Chi siamo</a>
+    <a href="#services" class="mobile-link">nostri servizi</a>
+    <a href="#properties" class="mobile-link">nostri prodotti</a>
+    <a href="#contact" class="mobile-link">Chiamata</a>
+</div>
 
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
