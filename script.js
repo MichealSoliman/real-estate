@@ -143,62 +143,78 @@ const properties = {
   1: {
     title: "Riverside Bungalow",
     location: "Brooklyn",
-    price: "$89,000",
+    price: "210€ mila",
+    
+
+  intro: {
+    title: "villa ",
+    description: "Splendida villa situata nella tranquilla e prestigiosa zona di Pessano con Bornago, in via provinciale 58, cap 20042.  Questa villa in vendita al piano in alzato offre ampi spazi interni, luminosi soggiorni e camere confortevoli, perfetta per famiglie che cercano eleganza e comfort.  La proprietà è circondata da un giardino privato ben curato, ideale per momenti di relax all'aperto o per intrattenere ospiti.  Costruita nel 1970, la villa combina uno stile classico con moderni aggiornamenti, tra cui aria condizionata nuova e impianti efficienti. La posizione è strategica, con facile accesso ai trasporti pubblici e servizi locali, garantendo una vita comoda e tranquilla.  Senza spese condominiali e con ampi spazi interni, questa villa rappresenta un'opportunità unica per chi desidera una residenza di qualità. Prezzo richiesto: 210€ mila.."
+  },
 
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3b2d49",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3b2d49",
+      "./img/villa-1.jpg",
+      "./img/villa-1(1).jpg",
+      
     ],
 
     details: {
       size: "125 m2",
-      bedrooms: "2",
-      bathrooms: "2",
-      floor: "2nd",
+      price : "210€ mila",
+      floor: "vendita piano in alzato",
+      bedrooms: "1",
+      bathrooms: "1",
+      kitchen:"1",
+      store: "1",
       additionalSpace: "Storage",
-      ceilingHeight: "3m",
-      renovation: "2022",
+      garden: "1",
+      Hall: "1",
       furnishing: "Fully furnished",
-      constructionYear: "2020"
+      constructionYear: "1970"
     },
 
-    utility: {
-      heating: "Gas",
-      airCondition: "Yes",
-      fireplace: "No",
-      elevator: "Yes",
-      ventilation: "Yes",
-      intercom: "Yes",
-      windowType: "Aluminum",
-      cableTV: "Yes",
-      wifi: "Yes"
-    }
+    // utility: {
+    //   heating: "Gas",
+    //   airCondition: "Yes",
+    //   fireplace: "No",
+    //   elevator: "Yes",
+    //   ventilation: "Yes",
+    //   intercom: "Yes",
+    //   windowType: "Aluminum",
+    //   cableTV: "Yes",
+    //   wifi: "Yes"
+    // }
   },
   2: {
   title: "Modern City Apartment",
   location: "Manhattan",
   price: "$120,000",
 
+   intro: {
+    title: "villa ",
+    description: "Splendido appartamento situato nella rinomata e tranquilla zona di Voghera, a pochi passi dalla stazione ferroviaria e vicino a tutti i principali servizi della città. L'immobile, posto al terzo piano, offre ampi spazi interni, con due camere da letto confortevoli e luminose, un soggiorno spazioso ideale per momenti di relax o per accogliere ospiti, un bagno funzionale e una cucina completamente attrezzata. Costruito nel 1970, l'appartamento combina uno stile classico con aggiornamenti moderni per garantire comfort e praticità quotidiana. La presenza di una cantina offre spazio aggiuntivo per riporre oggetti e mantenere l'abitazione ordinata.  La posizione strategica dell'immobile permette un facile accesso ai trasporti pubblici, rendendo semplici gli spostamenti verso altre zone di Voghera e del Ticino. L'ambiente circostante è tranquillo, perfetto per chi desidera vivere in una zona residenziale sicura e serena.  Senza spese condominiali elevate, l'appartamento rappresenta un'ottima opportunità sia per giovani coppie che per famiglie. Prezzo richiesto: 89.000€"
+  },
+
   images: [
-    "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-    "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-    "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+    "./img/appartamento.jpg",
+    "./img/appartamento-1(1).jpg",
+    "./img/appartamento-1(2).jpg",
+    "./img/appartamento-1(3).jpg",
   ],
 
-  details: {
-    size: "150 m2",
-    bedrooms: "3",
-    bathrooms: "2",
-    floor: "5th",
-    additionalSpace: "Balcony",
-    ceilingHeight: "3.2m",
-    renovation: "2023",
-    furnishing: "Fully furnished",
-    constructionYear: "2021"
-  },
+details: {
+      size: "100 m2",
+      price : " 89.000€",
+      floor: "Terzo piano",
+      bedrooms: "1",
+      bathrooms: "1",
+      kitchen:"1",
+      store: "1",
+      additionalSpace: "Storage",
+      // garden: "",
+      Hall: "1",
+      furnishing: "Fully furnished",
+      constructionYear: "1970"
+    },
 
   utility: {
     heating: "Central heating",
@@ -298,7 +314,7 @@ const properties = {
 
   details: {
     size: "210 m2",
-    bedrooms: "4",
+    bedrooms: "",
     bathrooms: "3",
     floor: "2 Floors",
     additionalSpace: "Garden",
@@ -365,28 +381,31 @@ if(property){
   // ---------- Details ----------
   document.getElementById("property-details").innerHTML = `
     ${createRow("fa-ruler-combined","Size",property.details.size)}
-    ${createRow("fa-bed","Bedrooms",property.details.bedrooms)}
-    ${createRow("fa-bath","Bathrooms",property.details.bathrooms)}
-    ${createRow("fa-layer-group","Floor",property.details.floor)}
-    ${createRow("fa-warehouse","Additional Space",property.details.additionalSpace)}
-    ${createRow("fa-arrows-up-down","Ceiling Height",property.details.ceilingHeight)}
-    ${createRow("fa-hammer","Renovation",property.details.renovation)}
-    ${createRow("fa-couch","Furnishing",property.details.furnishing)}
-    ${createRow("fa-calendar","Construction Year",property.details.constructionYear)}
+    ${createRow("fas fa-dollar-sign"," Prezzo",property.details.price)}
+    ${createRow("fas fa-building","Pavimento",property.details.floor)}
+    ${createRow("fa-bed","Camera di letto",property.details.bedrooms)}
+    ${createRow("fa-bath","Bagno",property.details.bathrooms)}
+    ${createRow("fa-warehouse","cantina ",property.details.store)}
+    ${createRow("fas fa-utensils","cucina ",property.details.kitchen)}
+    ${createRow("fas fa-tree","Giardino ",property.details.garden)}
+    ${createRow("fas fa-couch","soggiorno  ",property.details.Hall)}
+    ${createRow("fa-calendar","anno di costruzione",property.details.constructionYear)}
   `;
 
   // ---------- Utility ----------
-  document.getElementById("property-utility").innerHTML = `
-    ${createRow("fa-fire","Heating",property.utility.heating)}
-    ${createRow("fa-snowflake","Air Condition",property.utility.airCondition)}
-    ${createRow("fa-fire","Fireplace",property.utility.fireplace)}
-    ${createRow("fa-elevator","Elevator",property.utility.elevator)}
-    ${createRow("fa-fan","Ventilation",property.utility.ventilation)}
-    ${createRow("fa-phone","Intercom",property.utility.intercom)}
-    ${createRow("fa-window-maximize","Window Type",property.utility.windowType)}
-    ${createRow("fa-tv","Cable TV",property.utility.cableTV)}
-    ${createRow("fa-wifi","Wifi",property.utility.wifi)}
-  `;
+  // document.getElementById("property-utility").innerHTML = `
+  //   ${createRow("fa-fire","Heating",property.utility.heating)}
+  //   ${createRow("fa-snowflake","Air Condition",property.utility.airCondition)}
+  //   ${createRow("fa-fire","Fireplace",property.utility.fireplace)}
+  //   ${createRow("fa-elevator","Elevator",property.utility.elevator)}
+  //   ${createRow("fa-fan","Ventilation",property.utility.ventilation)}
+  //   ${createRow("fa-phone","Intercom",property.utility.intercom)}
+  //   ${createRow("fa-window-maximize","Window Type",property.utility.windowType)}
+  //   ${createRow("fa-tv","Cable TV",property.utility.cableTV)}
+  //   ${createRow("fa-wifi","Wifi",property.utility.wifi)}
+  // `;
+
+ 
 
 }
 
@@ -403,3 +422,22 @@ function createRow(icon,label,value){
 }
 
 
+
+
+// افترض ان properties موجودة زي ما انت خليتها
+// const properties = { 1: { title: ..., intro: { title: ..., description: ... }, ... } }
+
+// اقرأ الـ id من الرابط، مثلا property.html?id=1
+const params = new URLSearchParams(window.location.search);
+const propertyId = params.get("id");
+
+// اختار property المناسب
+const propertyy = properties[propertyId];
+
+if(propertyy && property.intro){
+  // العنوان من intro.title
+  document.getElementById("property-title").textContent = property.intro.title;
+
+  // الوصف من intro.description
+  document.getElementById("property-description").textContent = propertyy.intro.description;
+}

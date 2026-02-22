@@ -88,10 +88,7 @@
 <body class="bg-off-white text-charcoal font-serif selection:bg-soft-gold selection:text-white overflow-x-hidden">
 
    <!-- Page Loader -->
-    <div id="loader"
-        class="fixed inset-0 z-[100] bg-off-white flex items-center justify-center transition-opacity duration-1000">
-        <div class="text-3xl font-serif italic tracking-widest animate-pulse">GCS.r.l</div>
-    </div>
+    
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50
@@ -100,7 +97,7 @@
 
         <!-- Logo -->
         <a href="./index.htmlindex.html" class="text-3xl font-serif font-bold tracking-tight">
-            GCS.r.l.
+            Generali Srl.
         </a>
 
         <!-- Desktop Menu (Centered) -->
@@ -183,17 +180,31 @@
     <!-- Gallery -->
     <div class="mb-12">
 
-      <div class="rounded-2xl overflow-hidden shadow-lg mb-6">
-        <img id="mainImage"
-             class="w-full h-[500px] object-cover transition duration-500">
-      </div>
+      <div class="rounded-2xl overflow-hidden shadow-lg mb-6 h-[500px] w-[800px]">
+  <img id="mainImage"
+       class="w-full h-full object-cover transition-transform duration-500 transform hover:scale-105"
+       alt="Property Image">
+</div>
+      
 
       <div id="thumbnailContainer"
-           class="flex gap-4 overflow-x-auto">
+           class="flex gap-4 overflow-x-auto  m-auto">
       </div>
 
     </div>
+<!-- Property Intro -->
+<div id="intro"
+     class="bg-white rounded-3xl shadow-md p-8 mb-16">
+     
+  <h1 id="property-title"
+      class="text-3xl font-semibold mb-4 text-gray-900">
+  </h1>
 
+  <p id="property-description"
+     class="text-gray-600 leading-relaxed">
+  </p>
+
+</div>
      <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12">
 
     <!-- ================= LEFT SIDE (2/3) ================= -->
@@ -206,10 +217,10 @@
       </div>
 
       <!-- Utility -->
-      <h2 class="text-2xl font-semibold mb-8">Utilità della proprietà</h2>
+      <!-- <h2 class="text-2xl font-semibold mb-8">Utilità della proprietà</h2>
       <div id="property-utility"
            class="grid md:grid-cols-2 gap-x-16 gap-y-6 text-gray-700">
-      </div>
+      </div> -->
 
     </div>
 
@@ -228,9 +239,9 @@
         </p>
 
         <!-- Price -->
-        <div class="text-2xl font-serif mb-8 text-black">
+        <!-- <div class="text-2xl font-serif mb-8 text-black">
           $120,000
-        </div>
+        </div> -->
 
         <!-- Call Button -->
         <a href="tel:3899266641"
@@ -504,7 +515,7 @@ thumbnails.forEach(thumb => {
                 <!-- Column 1 - Logo & About -->
                 <div class="reveal-up">
                     <h3 class="text-4xl font-serif mb-6 tracking-tight">
-                        GCS.r.l.
+                        Generali Srl.
                     </h3>
                     <p class="text-gray-400 font-light leading-relaxed mb-8">
                      Realizziamo esperienze di vita raffinate attraverso immobili eccezionali e servizi di finitura su misura in tutta Europa.                    </p>
@@ -589,7 +600,7 @@ thumbnails.forEach(thumb => {
                     <ul class="space-y-4 text-gray-400 font-light">
                         <li><i class="fa-solid fa-location-dot mr-2 text-soft-gold"></i> Voghera, Italy</li>
                         <li><i class="fa-solid fa-phone mr-2 text-soft-gold"></i> 3899266641</li>
-                        <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i>info@GCS.r.l.com</li>
+                        <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i>info@Generali Srl.com</li>
                     </ul>
                 </div>
 
@@ -601,7 +612,7 @@ thumbnails.forEach(thumb => {
             <!-- Bottom -->
             <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
 
-                <p>© 2026 GCS.r.l. Tutti i diritti riservati.</p>
+                <p>© 2026 Generali Srl. Tutti i diritti riservati.</p>
 
             <div class="flex space-x-6 mt-6 md:mt-0">
                 <a href="#" class="hover:text-white transition duration-500">Informativa sulla Privacy</a>

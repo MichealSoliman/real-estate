@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^property/([0-9]+)$ property.html?id=$1 [L,QSA]
