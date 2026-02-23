@@ -87,9 +87,6 @@
 </head>
 <body class="bg-off-white text-charcoal font-serif selection:bg-soft-gold selection:text-white overflow-x-hidden">
 
-   <!-- Page Loader -->
-    
-
    <!-- Navbar -->
 <nav id="navbar" class="fixed top-0 left-0 w-full z-50
         transition-all duration-700
@@ -163,9 +160,8 @@
     <a href="#contact" class="mobile-link">Chiamata</a>
 </div>
 
-
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu"
+    <!-- Mobile Menu Overlay (duplicate kept for structure) -->
+    <div id="mobile-menu-duplicate"
         class="fixed inset-0 z-40 bg-off-white translate-x-full transition-transform duration-700 flex flex-col items-center justify-center space-y-8 text-2xl font-serif">
         <a href="#" class="mobile-link">principale</a>
         <a href="./index.html#about" class="mobile-link">Chi siamo</a>
@@ -174,115 +170,144 @@
         <a href="./index.html#contact" class="mobile-link">Chiamata</a>
     </div>
 
-  
-
-
-
-
-
-
-
+<!-- MAIN SECTION: Gallery and details on left, cards on right from the very top -->
 <section class="py-16 mt-8 px-6 md:px-20 bg-[#f8f8f8]">
-
-  <div class="max-w-6xl mx-auto">
-
-    <!-- Gallery -->
-    <div class="mb-12">
-
-<div class="rounded-2xl overflow-hidden  mb-6 w-full h-[500px]">
-  <img id="mainImage"
-       class="max-h-[500px] w-auto object-cover rounded-2xl "
-       alt="Property Image">
-</div>
+  <div class="max-w-7xl mx-auto">
+    <!-- Grid container: 2/3 left (gallery+details) + 1/3 right (cards) -->
+    <div class="grid lg:grid-cols-3 gap-12">
       
+      <!-- LEFT COLUMN (2/3) - Gallery, Intro, Details (exactly as before) -->
+      <div class="lg:col-span-2">
+        <!-- Gallery -->
+        <div class="mb-12">
+          <div class="rounded-2xl overflow-hidden mb-6 w-full h-[500px] md:h-[700px]">
+            <img id="mainImage" class="max-h-[750px] md-h[700px] w-full object-cover rounded-2xl" src="" alt="Property Image">
+          </div>
+          <div id="thumbnailContainer" class="flex gap-4 overflow-x-auto">
 
-      <div id="thumbnailContainer"
-           class="flex gap-4 overflow-x-auto ">
+          </div>
+        </div>
+
+        <!-- Property Intro -->
+        <div id="intro" class="bg-white rounded-3xl shadow-md p-8 mb-16">
+          <h1 id="property-title" class="text-3xl font-semibold mb-4 text-gray-900">
+            Villa Moderna con Vista Lago
+          </h1>
+          <p id="property-description" class="text-gray-600 leading-relaxed">
+            Proprietà esclusiva affacciata sul lago con finiture di pregio e ampi spazi verdi. Ideale per chi cerca privacy e comfort a pochi minuti dal centro.
+          </p>
+        </div>
+
+        <!-- Details -->
+        <h2 class="text-2xl font-semibold mb-8">Dettagli della proprietà</h2>
+        <div id="property-details" class="grid md:grid-cols-2 gap-x-16 gap-y-6 text-gray-700 mb-16">
+          <div><span class="font-medium">Camere da letto:</span> 4</div>
+          <div><span class="font-medium">Bagni:</span> 3</div>
+          <div><span class="font-medium">Superficie:</span> 220 m²</div>
+          <div><span class="font-medium">Giardino:</span> 800 m²</div>
+          <div><span class="font-medium">Piscina:</span> Privata</div>
+          <div><span class="font-medium">Posto auto:</span> 3 box</div>
+        </div>
       </div>
 
-    </div>
-<!-- Property Intro -->
-<div id="intro"
-     class="bg-white rounded-3xl shadow-md p-8 mb-16">
-     
-  <h1 id="property-title"
-      class="text-3xl font-semibold mb-4 text-gray-900">
-  </h1>
+      <!-- RIGHT COLUMN (1/3) - Cards from the very top, in their original form -->
+      <div class="lg:col-span-1">
+        <!-- "Richiedi questo immobile" form (exactly as original) -->
+        <div class="bg-white rounded-3xl shadow-lg p-8  top-32 mb-8">
+          <h3 class="text-xl font-semibold mb-6">Richiedi questo immobile</h3>
+          <p class="text-gray-500 text-sm mb-8 leading-relaxed">
+            Interessato a questa proprietà? Contattaci subito per fissare un appuntamento per una visita o per maggiori dettagli.
+          </p>
+          <a href="tel:3899266641" class="w-full flex items-center justify-center gap-3 bg-black text-white py-4 rounded-xl hover:bg-gray-800 transition duration-300 mb-4">
+            <i class="fa-solid fa-phone"></i> Chiamaci
+          </a>
+          <a href="https://wa.me/3899266641" target="_blank" class="w-full flex items-center justify-center gap-3 bg-green-500 text-white py-4 rounded-xl hover:bg-green-600 transition duration-300">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
 
-  <p id="property-description"
-     class="text-gray-600 leading-relaxed">
-  </p>
-
-</div>
-     <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12">
-
-    <!-- ================= LEFT SIDE (2/3) ================= -->
-    <div class="lg:col-span-2">
-
-      <!-- Details -->
-      <h2 class="text-2xl font-semibold mb-8">Dettagli della proprietà</h2>
-      <div id="property-details"
-           class="grid md:grid-cols-2 gap-x-16 gap-y-6 text-gray-700 mb-16">
-      </div>
-
-      <!-- Utility -->
-      <!-- <h2 class="text-2xl font-semibold mb-8">Utilità della proprietà</h2>
-      <div id="property-utility"
-           class="grid md:grid-cols-2 gap-x-16 gap-y-6 text-gray-700">
-      </div> -->
-
-    </div>
-
-
-    <!-- ================= RIGHT SIDE (1/3) ================= -->
-    <div class="lg:col-span-1">
-
-      <div class="bg-white rounded-3xl shadow-lg p-8 sticky top-32">
-
-        <h3 class="text-xl font-semibold mb-6">
+        <!-- Cards section title (original) -->
+        <h2 class="text-3xl md:text-4xl font-semibold mb-6 lg:text-2xl">
           Richiedi questo immobile
-        </h3>
+        </h2>
 
-        <p class="text-gray-500 text-sm mb-8 leading-relaxed">
-          Interessato a questa proprietà? Contattaci subito per fissare un appuntamento per una visita o per maggiori dettagli.
-        </p>
+        <!-- Cards grid: exactly the same classes as the original cards section (md:grid-cols-2 lg:grid-cols-1) to stack vertically -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-6">
+          <!-- Property Card 1 (identical classes) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+            <div class="relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200" class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-black text-white text-xs px-3 py-1 rounded-full">Appartamenti</span>
+                <span class="bg-white text-black text-xs px-3 py-1 rounded-full">Affitto</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-500 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2"></i>Milano</p>
+              <h3 class="text-lg font-semibold mb-4">Villa Familiare</h3>
+              <div class="flex justify-between text-gray-500 text-sm mb-4">
+                <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
+                <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+                <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
+              </div>
+              <div class="flex justify-between items-center border-t pt-4">
+                <span class="font-semibold text-lg">€2.200</span>
+              </div>
+            </div>
+          </div>
 
-        <!-- Price -->
-        <!-- <div class="text-2xl font-serif mb-8 text-black">
-          $120,000
-        </div> -->
+          <!-- Property Card 2 (identical classes) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+            <div class="relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-black text-white text-xs px-3 py-1 rounded-full">Appartamenti</span>
+                <span class="bg-white text-black text-xs px-3 py-1 rounded-full">Affitto</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-500 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2"></i>Torino</p>
+              <h3 class="text-lg font-semibold mb-4">Appartamento East Sunlight</h3>
+              <div class="flex justify-between text-gray-500 text-sm mb-4">
+                <span><i class="fa-solid fa-bed mr-1"></i>Camere: 4</span>
+                <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+                <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 160</span>
+              </div>
+              <div class="flex justify-between items-center border-t pt-4">
+                <span class="font-semibold text-lg">€1.200</span>
+              </div>
+            </div>
+          </div>
 
-        <!-- Call Button -->
-        <a href="tel:3899266641"
-           class="w-full flex items-center justify-center gap-3
-                  bg-black text-white py-4 rounded-xl
-                  hover:bg-gray-800 transition duration-300 mb-4">
-
-          <i class="fa-solid fa-phone"></i>
-          Chiamaci
-        </a>
-
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/3899266641"
-           target="_blank"
-           class="w-full flex items-center justify-center gap-3
-                  bg-green-500 text-white py-4 rounded-xl
-                  hover:bg-green-600 transition duration-300">
-
-          <i class="fa-brands fa-whatsapp"></i>
-          WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  </div>
-
+          <!-- Property Card 3 (identical classes) -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 group">
+            <div class="relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=1200" class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-black text-white text-xs px-3 py-1 rounded-full">Appartamenti</span>
+                <span class="bg-white text-black text-xs px-3 py-1 rounded-full">Affitto</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-500 text-sm mb-2"><i class="fa-solid fa-location-dot mr-2"></i>Milano</p>
+              <h3 class="text-lg font-semibold mb-4">Casa Moderna Familiare</h3>
+              <div class="flex justify-between text-gray-500 text-sm mb-4">
+                <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
+                <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
+                <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
+              </div>
+              <div class="flex justify-between items-center border-t pt-4">
+                <span class="font-semibold text-lg">€2.200</span>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end card grid -->
+      </div> <!-- end right column -->
+    </div> <!-- end main grid -->
+  </div> <!-- end container -->
 </section>
 
+<!-- Original cards section removed - now they are on the right from the top -->
 
 <script>
 const mainImage = document.getElementById("mainImage");
@@ -290,369 +315,88 @@ const thumbnails = document.querySelectorAll(".thumb");
 
 thumbnails.forEach(thumb => {
   thumb.addEventListener("click", function() {
-
-    // تغيير الصورة مع Fade
     mainImage.style.opacity = 0;
-
     setTimeout(() => {
       mainImage.src = this.src;
       mainImage.style.opacity = 1;
     }, 200);
-
-    // إزالة البوردر من الكل
     thumbnails.forEach(img => img.classList.remove("border-black"));
-
-    // إضافة بوردر للصورة المختارة
     this.classList.add("border-black");
   });
 });
 </script>
 
-<section class="py-24 pt-6 px-6 md:px-20 bg-[#f6f6f6]">
-
-  <div class="max-w-7xl mx-auto">
-
-    <!-- Title -->
-    <h2 class="text-3xl md:text-4xl font-semibold mb-12">
-      Richiedi questo immobile
-    </h2>
-
-   <!-- Grid -->
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-  <!-- Property Card 1 -->
-  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-              hover:shadow-xl transition duration-500 group">
-
-    <!-- Image -->
-    <div class="relative overflow-hidden ">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
-           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
-
-      <div class="absolute top-4 left-4 flex gap-2">
-        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-          
-        </span>Appartamenti
-        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-          Affitto
-        </span>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <div class="p-6">
-
-      <p class="text-gray-500 text-sm mb-2">
-        <i class="fa-solid fa-location-dot mr-2"></i>Milano
-      </p>
-
-      <h3 class="text-lg font-semibold mb-4">
-        Villa Familiare
-      </h3>
-
-      <!-- Specs -->
-      <div class="flex justify-between text-gray-500 text-sm mb-4">
-        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
-        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
-        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
-      </div>
-
-      <!-- Bottom -->
-      <div class="flex justify-between items-center border-t pt-4">
-
-        
-
-        <span class="font-semibold text-lg">€2.200</span>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Property Card 2 -->
-  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-              hover:shadow-xl transition duration-500 group">
-
-    <div class="relative overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200"
-           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
-
-      <div class="absolute top-4 left-4 flex gap-2">
-        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-          Appartamenti
-        </span>
-        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-          Affitto
-        </span>
-      </div>
-    </div>
-
-    <div class="p-6">
-
-      <p class="text-gray-500 text-sm mb-2">
-        <i class="fa-solid fa-location-dot mr-2"></i>Torino
-      </p>
-
-      <h3 class="text-lg font-semibold mb-4">
-        Appartamento East Sunlight
-      </h3>
-
-      <div class="flex justify-between text-gray-500 text-sm mb-4">
-        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 4</span>
-        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
-        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 160</span>
-      </div>
-
-      <div class="flex justify-between items-center border-t pt-4">
-
-        
-
-        <span class="font-semibold text-lg">€1.200</span>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Property Card 3 -->
-  <div class="bg-white rounded-2xl overflow-hidden shadow-sm 
-              hover:shadow-xl transition duration-500 group">
-
-    <div class="relative overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=1200"
-           class="w-full h-64 object-cover transition duration-700 group-hover:scale-105">
-
-      <div class="absolute top-4 left-4 flex gap-2">
-        <span class="bg-black text-white text-xs px-3 py-1 rounded-full">
-          Appartamenti
-        </span>
-        <span class="bg-white text-black text-xs px-3 py-1 rounded-full">
-          Affitto
-        </span>
-      </div>
-    </div>
-
-    <div class="p-6">
-
-      <p class="text-gray-500 text-sm mb-2">
-        <i class="fa-solid fa-location-dot mr-2"></i>Milano
-      </p>
-
-      <h3 class="text-lg font-semibold mb-4">
-        Casa Moderna Familiare
-      </h3>
-
-      <div class="flex justify-between text-gray-500 text-sm mb-4">
-        <span><i class="fa-solid fa-bed mr-1"></i>Camere: 2</span>
-        <span><i class="fa-solid fa-bath mr-1"></i>Bagni: 2</span>
-        <span><i class="fa-solid fa-ruler-combined mr-1"></i>Mq: 150</span>
-      </div>
-
-      <div class="flex justify-between items-center border-t pt-4">
-
-       
-
-        <span class="font-semibold text-lg">€2.200</span>
-
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-  </div>
-
-</section>
-
-
 <!-- Floating Buttons -->
 <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999]">
-
-    <!-- Call Button -->
-    <a href="tel:3899266641"
-       class="group w-14 h-14 flex items-center justify-center
-              rounded-full bg-black text-white
-              shadow-[0_10px_30px_rgba(0,0,0,0.4)]
-              transition-all duration-500
-              hover:scale-110 hover:bg-gray-800">
-
+    <a href="tel:3899266641" class="group w-14 h-14 flex items-center justify-center rounded-full bg-black text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-all duration-500 hover:scale-110 hover:bg-gray-800">
         <i class="fa-solid fa-phone text-lg"></i>
-
-        <!-- Tooltip -->
-        <span class="absolute right-16 bg-black text-white text-xs px-3 py-2 rounded-md
-                     opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
-            Chiamaci
-        </span>
-
+        <span class="absolute right-16 bg-black text-white text-xs px-3 py-2 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">Chiamaci</span>
     </a>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/3899266641"
-       target="_blank"
-       class="group w-14 h-14 flex items-center justify-center
-              rounded-full bg-green-500 text-white
-              shadow-[0_10px_30px_rgba(0,0,0,0.4)]
-              transition-all duration-500
-              hover:scale-110 hover:bg-green-600">
-
+    <a href="https://wa.me/3899266641" target="_blank" class="group w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-all duration-500 hover:scale-110 hover:bg-green-600">
         <i class="fa-brands fa-whatsapp text-xl"></i>
-
-        <!-- Tooltip -->
-        <span class="absolute right-16 bg-green-600 text-white text-xs px-3 py-2 rounded-md
-                     opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
-            WhatsApp
-        </span>
-
+        <span class="absolute right-16 bg-green-600 text-white text-xs px-3 py-2 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">WhatsApp</span>
     </a>
-
 </div>
 
-
-
- <!-- Ultra Luxury Footer -->
-    <footer class="relative bg-[#111111] text-white pt-32 pb-16 overflow-hidden">
-
-        <!-- Top Subtle Gradient Glow -->
-        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/60 to-transparent"></div>
-
-        <div class="max-w-7xl mx-auto px-8 md:px-20 relative z-10">
-
-            <!-- Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
-
-                <!-- Column 1 - Logo & About -->
-                <div class="reveal-up">
-                    <h3 class="text-4xl font-serif mb-6 tracking-tight">
-                        Generali Srl.
-                    </h3>
-                    <p class="text-gray-400 font-light leading-relaxed mb-8">
-                     Realizziamo esperienze di vita raffinate attraverso immobili eccezionali e servizi di finitura su misura in tutta Europa.                    </p>
-
-                    <!-- Social Icons -->
-                    <div class="flex space-x-5">
-
-                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
-                                      border border-white/20 rounded-full
-                                      hover:border-soft-gold hover:bg-soft-gold/10
-                                      transition-all duration-500">
-
-                            <i class="fa-brands fa-instagram text-lg
-                                  transition duration-500 group-hover:text-soft-gold"></i>
-                        </a>
-
-                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
-                                      border border-white/20 rounded-full
-                                      hover:border-soft-gold hover:bg-soft-gold/10
-                                      transition-all duration-500">
-
-                            <i class="fa-brands fa-facebook-f text-lg
-                                  transition duration-500 group-hover:text-soft-gold"></i>
-                        </a>
-
-                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
-                                      border border-white/20 rounded-full
-                                      hover:border-soft-gold hover:bg-soft-gold/10
-                                      transition-all duration-500">
-
-                            <i class="fa-brands fa-linkedin-in text-lg
-                                  transition duration-500 group-hover:text-soft-gold"></i>
-                        </a>
-
-                        <a href="#" class="group w-11 h-11 flex items-center justify-center 
-                                      border border-white/20 rounded-full
-                                      hover:border-soft-gold hover:bg-soft-gold/10
-                                      transition-all duration-500">
-
-                            <i class="fa-brands fa-whatsapp text-lg
-                                  transition duration-500 group-hover:text-soft-gold"></i>
-                        </a>
-
-                    </div>
+<!-- Ultra Luxury Footer -->
+<footer class="relative bg-[#111111] text-white pt-32 pb-16 overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/60 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-8 md:px-20 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+            <div class="reveal-up">
+                <h3 class="text-4xl font-serif mb-6 tracking-tight">Generali Srl.</h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8">Realizziamo esperienze di vita raffinate attraverso immobili eccezionali e servizi di finitura su misura in tutta Europa.</p>
+                <div class="flex space-x-5">
+                    <a href="#" class="group w-11 h-11 flex items-center justify-center border border-white/20 rounded-full hover:border-soft-gold hover:bg-soft-gold/10 transition-all duration-500"><i class="fa-brands fa-instagram text-lg transition duration-500 group-hover:text-soft-gold"></i></a>
+                    <a href="#" class="group w-11 h-11 flex items-center justify-center border border-white/20 rounded-full hover:border-soft-gold hover:bg-soft-gold/10 transition-all duration-500"><i class="fa-brands fa-facebook-f text-lg transition duration-500 group-hover:text-soft-gold"></i></a>
+                    <a href="#" class="group w-11 h-11 flex items-center justify-center border border-white/20 rounded-full hover:border-soft-gold hover:bg-soft-gold/10 transition-all duration-500"><i class="fa-brands fa-linkedin-in text-lg transition duration-500 group-hover:text-soft-gold"></i></a>
+                    <a href="#" class="group w-11 h-11 flex items-center justify-center border border-white/20 rounded-full hover:border-soft-gold hover:bg-soft-gold/10 transition-all duration-500"><i class="fa-brands fa-whatsapp text-lg transition duration-500 group-hover:text-soft-gold"></i></a>
                 </div>
-
-
-                <!-- Column 2 - Quick Links -->
-                <div class="reveal-up">
-                    <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                        Collegamenti rapidi
-                    </h4>
-                    <ul class="space-y-4 text-gray-400 font-light">
-                        <li><a href="#home" class="hover:text-white transition duration-500">principale</a></li>
-                        <li><a href="#about" class="hover:text-white transition duration-500">Chi siamo</a></li>
-                        <li><a href="#services" class="hover:text-white transition duration-500">nostri servizi</a></li>
-                        <li><a href="#properties" class="hover:text-white transition duration-500">nostri prodotti</a></li>
-                        <li><a href="#contact" class="hover:text-white transition duration-500">Chiamata</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- Column 3 - Services -->
-                <div class="reveal-up">
-                   <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                        I Nostri Servizi
-                    </h4>
-                    <ul class="space-y-4 text-gray-400 font-light">
-                        <li>Ville di Lusso</li>
-                        <li>Appartamenti Moderni</li>
-                        <li>Ristrutturazione Completa</li>
-                        <li>Design d'Interni</li>
-                    </ul>
-                </div>
-
-
-                <!-- Column 4 - Contact -->
-                <div class="reveal-up">
-                    <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">
-                        Contact
-                    </h4>
-                    <ul class="space-y-4 text-gray-400 font-light">
-                        <li><i class="fa-solid fa-location-dot mr-2 text-soft-gold"></i> Voghera, Italy</li>
-                        <li><i class="fa-solid fa-phone mr-2 text-soft-gold"></i> 3899266641</li>
-                        <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i>info@Generali Srl.com</li>
-                    </ul>
-                </div>
-
             </div>
-
-            <!-- Divider -->
-            <div class="w-full h-[1px] bg-white/10 mb-10"></div>
-
-            <!-- Bottom -->
-            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
-
-                <p>© 2026 Generali Srl. Tutti i diritti riservati.</p>
-
+            <div class="reveal-up">
+                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">Collegamenti rapidi</h4>
+                <ul class="space-y-4 text-gray-400 font-light">
+                    <li><a href="#home" class="hover:text-white transition duration-500">principale</a></li>
+                    <li><a href="#about" class="hover:text-white transition duration-500">Chi siamo</a></li>
+                    <li><a href="#services" class="hover:text-white transition duration-500">nostri servizi</a></li>
+                    <li><a href="#properties" class="hover:text-white transition duration-500">nostri prodotti</a></li>
+                    <li><a href="#contact" class="hover:text-white transition duration-500">Chiamata</a></li>
+                </ul>
+            </div>
+            <div class="reveal-up">
+                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">I Nostri Servizi</h4>
+                <ul class="space-y-4 text-gray-400 font-light">
+                    <li>Ville di Lusso</li><li>Appartamenti Moderni</li><li>Ristrutturazione Completa</li><li>Design d'Interni</li>
+                </ul>
+            </div>
+            <div class="reveal-up">
+                <h4 class="uppercase tracking-[0.3em] text-sm mb-8 text-soft-gold">Contact</h4>
+                <ul class="space-y-4 text-gray-400 font-light">
+                    <li><i class="fa-solid fa-location-dot mr-2 text-soft-gold"></i>Voghera, Italy</li>
+                    <li><i class="fa-solid fa-phone mr-2 text-soft-gold"></i>3899266641</li>
+                    <li><i class="fa-solid fa-envelope mr-2 text-soft-gold"></i>info@Generali Srl.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-full h-[1px] bg-white/10 mb-10"></div>
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-light">
+            <p>© 2026 Generali Srl. Tutti i diritti riservati.</p>
             <div class="flex space-x-6 mt-6 md:mt-0">
                 <a href="#" class="hover:text-white transition duration-500">Informativa sulla Privacy</a>
                 <a href="#" class="hover:text-white transition duration-500">Termini di Servizio</a>
             </div>
-
-            </div>
-
         </div>
-    </footer>
+    </div>
+</footer>
+
 <script>
 const reveals = document.querySelectorAll('.reveal-up');
-
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('opacity-100','translate-y-0');
-    }
-  });
+  entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('opacity-100','translate-y-0'); } });
 }, { threshold: 0.2 });
-
-reveals.forEach(el => {
-  el.classList.add('opacity-0','translate-y-10','transition','duration-1000');
-  observer.observe(el);
-});
+reveals.forEach(el => { el.classList.add('opacity-0','translate-y-10','transition','duration-1000'); observer.observe(el); });
 </script>
 
-
-
- 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
