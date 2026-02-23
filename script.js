@@ -141,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const properties = {
 
   1: {
+     slug: "riverside-bungalow",
     title: "Riverside Bungalow",
     location: "Brooklyn",
     price: "210€ mila",
