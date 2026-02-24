@@ -159,7 +159,7 @@ const properties = {
     ],
 
     details: {
-      size: "125 m2",
+      size: "80 m2",
       price : "210€ mila",
       floor: "vendita piano in alzato",
       bedrooms: "1",
@@ -196,17 +196,17 @@ const properties = {
   },
 
   images: [
-    "./img/appartamento.jpg",
-    "./img/appartamento-1(1).jpg",
-    "./img/appartamento-1(2).jpg",
-    "./img/appartamento-1(3).jpg",
+    "./img/1 (1).jpeg",
+    "./img/1 (2).jpeg",
+    "./img/1 (3).jpeg",
+    "./img/1 (4).jpeg",
   ],
 
 details: {
-      size: "100 m2",
+      size: "90 m2",
       price : " 89.000€",
       floor: "Terzo piano",
-      bedrooms: "1",
+      bedrooms: "2",
       bathrooms: "1",
       kitchen:"1",
       store: "1",
